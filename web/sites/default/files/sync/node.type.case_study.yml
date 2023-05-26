@@ -1,0 +1,18 @@
+uuid: 0c1383cd-8f2a-4d3e-ab7b-c49bf25396d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Case Study'
+type: case_study
+description: 'Create a case study for work ORI has done'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

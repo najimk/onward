@@ -1,0 +1,23 @@
+uuid: c84dbc82-286b-4073-83e2-98311c899cce
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - onward
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: onward_search_form_narrow
+theme: onward
+region: branding
+weight: -2
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

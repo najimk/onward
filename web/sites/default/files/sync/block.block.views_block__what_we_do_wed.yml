@@ -1,0 +1,29 @@
+uuid: 1053ec5d-1b79-44b4-80f0-896295854643
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.what_we_do
+  module:
+    - system
+    - views
+  theme:
+    - onward
+id: views_block__what_we_do_wed
+theme: onward
+region: content_before
+weight: 0
+provider: null
+plugin: 'views_block:what_we_do-wed'
+settings:
+  id: 'views_block:what_we_do-wed'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

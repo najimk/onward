@@ -1,0 +1,25 @@
+uuid: 1c63fc94-08b6-46de-8c2e-6a107b31d7c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c61ed14d-cc80-48c2-8c84-2e9e605ef991'
+  module:
+    - block_content
+  theme:
+    - onward
+id: nairobifootercontacts
+theme: onward
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:c61ed14d-cc80-48c2-8c84-2e9e605ef991'
+settings:
+  id: 'block_content:c61ed14d-cc80-48c2-8c84-2e9e605ef991'
+  label: 'Nairobi Office'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 62d35b16-b38d-46bd-b27b-f6c88802ffd7
+name: ORI
+mail: naj_tech@hotmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/30
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

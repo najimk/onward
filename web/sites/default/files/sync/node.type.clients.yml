@@ -1,0 +1,17 @@
+uuid: 3bf7e34d-0842-4485-8692-4aea44577a56
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Clients
+type: clients
+description: 'create an entry of our client'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: 6bd2c973-bdfb-4878-b9a7-76535e453d4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_outcomes
+    - node.type.case_study
+  module:
+    - text
+id: node.case_study.field_outcomes
+field_name: field_outcomes
+entity_type: node
+bundle: case_study
+label: Outcomes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

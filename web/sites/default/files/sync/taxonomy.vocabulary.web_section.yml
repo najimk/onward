@@ -1,0 +1,8 @@
+uuid: 95ba8d03-4199-454f-a86b-f95bbcc4c88a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Web section'
+vid: web_section
+description: 'The different sections of the website'
+weight: 0

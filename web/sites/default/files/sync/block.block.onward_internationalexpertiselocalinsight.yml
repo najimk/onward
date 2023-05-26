@@ -1,0 +1,30 @@
+uuid: 77cf64ff-b5d7-483f-8bef-bc08c3789fca
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e04aae0c-8b84-4c5b-a749-68448893cb7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - onward
+id: onward_internationalexpertiselocalinsight
+theme: onward
+region: branding
+weight: -8
+provider: null
+plugin: 'block_content:e04aae0c-8b84-4c5b-a749-68448893cb7d'
+settings:
+  id: 'block_content:e04aae0c-8b84-4c5b-a749-68448893cb7d'
+  label: 'International expertise, local insight'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /what-we-do

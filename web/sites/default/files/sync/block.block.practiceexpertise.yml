@@ -1,0 +1,30 @@
+uuid: ca56d895-ef7a-4d40-818e-8a22d2f0b64f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8b00781c-2060-42ee-b6c0-eb986dec09c5'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: practiceexpertise
+theme: olivero
+region: content_above
+weight: -6
+provider: null
+plugin: 'block_content:8b00781c-2060-42ee-b6c0-eb986dec09c5'
+settings:
+  id: 'block_content:8b00781c-2060-42ee-b6c0-eb986dec09c5'
+  label: 'Practice / Expertise'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /our-expertise

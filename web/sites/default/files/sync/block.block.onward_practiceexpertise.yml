@@ -1,0 +1,30 @@
+uuid: 45ebd464-a208-4afe-a87b-a8098d7f7dfa
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:8b00781c-2060-42ee-b6c0-eb986dec09c5'
+  module:
+    - block_content
+    - system
+  theme:
+    - onward
+id: onward_practiceexpertise
+theme: onward
+region: branding
+weight: -7
+provider: null
+plugin: 'block_content:8b00781c-2060-42ee-b6c0-eb986dec09c5'
+settings:
+  id: 'block_content:8b00781c-2060-42ee-b6c0-eb986dec09c5'
+  label: 'Practice / Expertise'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /our-expertise

@@ -1,0 +1,25 @@
+uuid: 789c0b9b-5aec-41c4-9c78-7be7e89c968c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3ca76914-28c0-4f18-bfbf-04510227d7de'
+  module:
+    - block_content
+  theme:
+    - onward
+id: ugandafootercontacts
+theme: onward
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:3ca76914-28c0-4f18-bfbf-04510227d7de'
+settings:
+  id: 'block_content:3ca76914-28c0-4f18-bfbf-04510227d7de'
+  label: 'Uganda Office'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

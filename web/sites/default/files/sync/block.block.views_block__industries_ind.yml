@@ -1,0 +1,29 @@
+uuid: 6e6a6cf3-144e-475c-8c95-ea028cb74bcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.industries
+  module:
+    - system
+    - views
+  theme:
+    - onward
+id: views_block__industries_ind
+theme: onward
+region: content_after
+weight: 0
+provider: null
+plugin: 'views_block:industries-ind'
+settings:
+  id: 'views_block:industries-ind'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

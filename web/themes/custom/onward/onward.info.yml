@@ -1,0 +1,22 @@
+name: ORI
+type: theme
+description: Custom Onward Resources theme based on bootstrap barrio
+core_version_requirement: ^9 || ^10
+base theme: bootstrap_barrio
+
+regions:
+  branding: Branding
+  top: Top
+  slider: Slider
+  breadcrumb: Breadcrumb
+  preface: Preface
+  content_before: Content Before
+  content: Content
+  content_after: Content After
+  news_updates: news Updates
+  footer: Footer
+  copyright: Copyright
+
+libraries:
+  - onward/global-styling
+  - onward/bootstrap-cdn

@@ -1,0 +1,25 @@
+uuid: 87bc59a1-3708-4582-9b43-90e23993fc6e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2c510a55-29cf-462f-ba3a-3891c5be4c39'
+  module:
+    - block_content
+  theme:
+    - onward
+id: footersocial
+theme: onward
+region: copyright
+weight: 0
+provider: null
+plugin: 'block_content:2c510a55-29cf-462f-ba3a-3891c5be4c39'
+settings:
+  id: 'block_content:2c510a55-29cf-462f-ba3a-3891c5be4c39'
+  label: 'footer social'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

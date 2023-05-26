@@ -1,0 +1,29 @@
+uuid: 551da09c-9db1-4677-a14b-dc7b82d2880e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home
+  module:
+    - system
+    - views
+  theme:
+    - onward
+id: views_block__home_whoweare
+theme: onward
+region: preface
+weight: 0
+provider: null
+plugin: 'views_block:home-whoweare'
+settings:
+  id: 'views_block:home-whoweare'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

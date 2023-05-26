@@ -1,0 +1,30 @@
+uuid: e2c8e386-88cd-4b2d-94ab-c64d99e7982f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e04aae0c-8b84-4c5b-a749-68448893cb7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: internationalexpertiselocalinsight
+theme: olivero
+region: content_above
+weight: -7
+provider: null
+plugin: 'block_content:e04aae0c-8b84-4c5b-a749-68448893cb7d'
+settings:
+  id: 'block_content:e04aae0c-8b84-4c5b-a749-68448893cb7d'
+  label: 'International expertise, local insight'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /what-we-do

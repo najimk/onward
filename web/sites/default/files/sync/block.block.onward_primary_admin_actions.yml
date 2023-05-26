@@ -1,0 +1,20 @@
+uuid: f8ba0437-44eb-4640-8336-db1a8b1bf04a
+langcode: en
+status: false
+dependencies:
+  theme:
+    - onward
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: onward_primary_admin_actions
+theme: onward
+region: branding
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

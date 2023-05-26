@@ -1,0 +1,21 @@
+uuid: 9178542f-38ce-42c9-b960-52e290a3b36d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_engagement
+    - node.type.case_study
+  module:
+    - text
+id: node.case_study.field_engagement
+field_name: field_engagement
+entity_type: node
+bundle: case_study
+label: Engagement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

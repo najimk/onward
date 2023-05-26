@@ -1,0 +1,23 @@
+uuid: da34c17f-65ee-42c2-8935-a78736f610b1
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - onward
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: onward_search_form_wide
+theme: onward
+region: branding
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 207498b1-d676-4348-b7cd-942bf9a5aec0
+langcode: en
+status: true
+dependencies: {  }
+name: expertise_640x360
+label: 'Expertise 640x360'
+effects:
+  84a019de-0f5c-472c-ad22-c952247677fa:
+    uuid: 84a019de-0f5c-472c-ad22-c952247677fa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 360
+      anchor: center-center

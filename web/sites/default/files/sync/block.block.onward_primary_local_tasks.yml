@@ -1,0 +1,22 @@
+uuid: 5df67ebc-d79d-4efa-8c4b-98172a9f0531
+langcode: en
+status: true
+dependencies:
+  theme:
+    - onward
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: onward_primary_local_tasks
+theme: onward
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
