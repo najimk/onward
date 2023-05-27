@@ -8,10 +8,10 @@ regions:
   branding: Branding
   top: Top
   slider: Slider
-  breadcrumb: Breadcrumb
   preface: Preface
   content_before: Content Before
   content: Content
+  content_bottom: Content Bottom
   content_after: Content After
   news_updates: news Updates
   footer: Footer

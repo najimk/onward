@@ -76,20 +76,8 @@
   </div>
 </section>	
 
-<section id="slider">
-{% if page.slider %}
-	{{ page.slider }}
-{% endif %}
-</section>
-
-
 {% if page.preface %}
 	{{ page.preface }}
-{% endif %}
-
-
-{% if page.breadcrumb %}
-	{{  page.breadcrumb }}
 {% endif %}
 
 
@@ -99,6 +87,10 @@
 
 {% if page.content %}
 	{{ page.content }}
+{% endif %}
+
+{% if page.content_bottom %}
+	{{ page.content_bottom }}
 {% endif %}
 
 {% if page.content_after %}
