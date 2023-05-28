@@ -6,6 +6,7 @@ base theme: bootstrap_barrio
 
 regions:
   branding: Branding
+  navigation: Navigation
   top: Top
   slider: Slider
   preface: Preface

@@ -67,15 +67,25 @@
  * @see html.html.twig
  */
 #}
-
-<section id="branding">
-  <div class="container">
-	{% if page.branding %}
-		{{ page.branding }}
-	{% endif %}
-  </div>
-</section>	
-
+<header>
+	<section id="branding">
+		<div class="container">
+			<div class="row my-3">
+				<div class="col-md-3">
+					{% if page.branding %}
+					{{ page.branding }}
+					{% endif %}
+				</div>
+				<div class="col-md-7">
+					{{ page.navigation }}
+				</div>
+				<div class="col-md-2">
+					{{ page.top }}
+				</div>
+			</div>
+		</div>
+	</section>	
+</header>
 {% if page.content %}
 	{{ page.content }}
 {% endif %}

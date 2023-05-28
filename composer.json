@@ -28,6 +28,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/token": "^1.11",
+        "drupal/twig_attributes": "^2.0",
         "drush/drush": "^11.5"
     },
     "conflict": {

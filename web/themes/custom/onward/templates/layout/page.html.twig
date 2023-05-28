@@ -68,14 +68,25 @@
  */
 #}
 
-<section id="branding">
-  <div class="container">
-	{% if page.branding %}
-		{{ page.branding }}
-	{% endif %}
-  </div>
-</section>	
-
+<header>
+	<section id="branding">
+		<div class="container">
+			<div class="row my-3">
+				<div class="col-md-3">
+					{% if page.branding %}
+					{{ page.branding }}
+					{% endif %}
+				</div>
+				<div class="col-md-7">
+					{{ page.navigation }}
+				</div>
+				<div class="col-md-2">
+					{{ page.top }}
+				</div>
+			</div>
+		</div>
+	</section>	
+</header>
 {% if page.preface %}
 	{{ page.preface }}
 {% endif %}
@@ -86,7 +97,11 @@
 {% endif %}
 
 {% if page.content %}
+<section id="content">
+  <div class="container my-5">
 	{{ page.content }}
+  </div>
+</section>
 {% endif %}
 
 {% if page.content_bottom %}

@@ -2239,6 +2239,55 @@
             "install-path": "../../web/modules/contrib/token"
         },
         {
+            "name": "drupal/twig_attributes",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twig_attributes.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_attributes-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "aafcc16a41b4071fc6ccb284b49f669ade700873"
+            },
+            "require": {
+                "drupal/core": "^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1681355254",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Rick Hawkins (rlhawk)",
+                    "homepage": "https://www.drupal.org/u/rlhawk",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides the ability to add attributes to child render arrays in Twig templates.",
+            "homepage": "https://www.drupal.org/project/twig_attributes",
+            "support": {
+                "source": "http://cgit.drupalcode.org/twig_attributes",
+                "issues": "https://www.drupal.org/project/issues/twig_attributes"
+            },
+            "install-path": "../../web/modules/contrib/twig_attributes"
+        },
+        {
             "name": "drush/drush",
             "version": "11.5.1",
             "version_normalized": "11.5.1.0",

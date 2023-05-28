@@ -47,16 +47,9 @@
   ]
 %}
 {% block paragraph %}
-<section id="slider">
-<div
-  id="carouselExampleSlidesOnly"
-  class="carousel slide"
-  data-bs-ride="carousel">
-    <div class="carousel-inner">
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {{ content }}
     {% endblock %}
-    </div>
-</div>
-</section>
+  </div>
 {% endblock paragraph %}
