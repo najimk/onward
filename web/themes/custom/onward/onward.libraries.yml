@@ -3,6 +3,7 @@ global-styling:
   css:
     theme:
       css/styles.css: {}
+      css/custom.css: {}
   js:
     js/app.js: {}
   dependencies:

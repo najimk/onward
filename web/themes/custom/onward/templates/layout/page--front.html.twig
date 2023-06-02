@@ -67,25 +67,30 @@
  * @see html.html.twig
  */
 #}
-<header>
-	<section id="branding">
-		<div class="container">
-			<div class="row my-3">
-				<div class="col-md-3">
-					{% if page.branding %}
-					{{ page.branding }}
-					{% endif %}
-				</div>
-				<div class="col-md-7">
-					{{ page.navigation }}
-				</div>
-				<div class="col-md-2">
-					{{ page.top }}
-				</div>
-			</div>
-		</div>
-	</section>	
-</header>
+
+    <header class="sticky-top shadow-sm">
+      <section id="branding">
+        <div class="container">
+          <div class="row py-3 pb-md-2">
+            <div class="col-4 logo col-md-2">
+             {% if page.branding %}
+				{{ page.branding }}
+			{% endif %}
+            </div>
+
+            <div class="mobile-menu col-md-10 col-xl-7">
+              {{ page.navigation }}
+            </div>
+            <div class="d-none d-xl-block col-xl-3 pt-3">
+			{{ page.top }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+
+
 {% if page.content %}
 	{{ page.content }}
 {% endif %}
