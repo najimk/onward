@@ -33,9 +33,9 @@
 #}
 {%
   set classes = [
-    'block',
-    'block-menu',
-    'navigation',
+    'navbar',
+    'navbar-expand-lg',
+    'bg-body-tertiary',
     'menu--' ~ derivative_plugin_id|clean_class,
   ]
 %}
@@ -51,6 +51,22 @@
 
   {# Menu. #}
   {% block content %}
+  <div {{ content_attributes.addClass('container-fluid') }}>
+  <button
+   class="navbar-toggler"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#navbarSupportedContent"
+   aria-controls="navbarSupportedContent"
+   aria-expanded="false"
+   aria-label="Toggle navigation"
+   >
+   <span class="navbar-toggler-icon">
+    </span>
+  </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     {{ content }}
+   </div>
+  </div>
   {% endblock %}
 </nav>

@@ -37,7 +37,6 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  <div class="row my-5">
   {{ title_prefix }}
   {% if label %}
     <span{{ title_attributes }}>{{ label }}</span>
@@ -46,5 +45,4 @@
   {% block content %}
     {{ content }}
   {% endblock %}
-  </div>
 </div>

@@ -102,7 +102,7 @@ header {
     .navbar-collapse {
       @media (max-width: 768px) {
         position: relative;
-        top: 12px;
+        top: 22px;
         background: linear-gradient(267deg, #491e1e, #7c3504);
         z-index: 99;
         padding: 1rem 1.5rem;
@@ -295,6 +295,23 @@ header {
   }
 }
 
+.more-link {
+  margin: 2rem 0 0;
+  a {
+    border-radius: unset;
+    border: 1px solid var(--ori-brown);
+    color: var(--ori-brown);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1em 2.5em;
+    transition: 0.5s all ease-in-out;
+    text-decoration: none;
+    display: block;
+    width: max-content;
+  }
+}
+
 #preface {
   background: url(../images/preface-bg.png) no-repeat;
   background-size: cover;
@@ -469,8 +486,11 @@ header {
     }
   }
 
-  h2 {
+  h2,
+  .field__label {
     margin: 0.5rem 0 1.5rem;
+    font-weight: 700;
+    font-size: 2.3rem;
   }
   p {
     font-size: 130%;
@@ -511,6 +531,17 @@ header {
     p:nth-child(3),
     p:nth-child(4) {
       font-weight: 600;
+    }
+  }
+
+  .more-link {
+    display: flex;
+    justify-content: center;
+    a {
+      &:hover {
+        background-color: var(--ori-brown);
+        color: #ffffff;
+      }
     }
   }
 }
@@ -1191,7 +1222,7 @@ header {
 }
 
 //homepage background overrides
-body.front {
+body.path-frontpage {
   #preface {
     background: url(../images/logo-accent.png) no-repeat;
     background-position: -70% -3%;

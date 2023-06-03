@@ -9,6 +9,7 @@ regions:
   navigation: Navigation
   top: Top
   slider: Slider
+  welcome: Welcome
   preface: Preface
   content_before: Content Before
   content: Content

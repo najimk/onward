@@ -83,7 +83,7 @@ header {
 @media (max-width: 768px) {
   #branding .navbar .navbar-collapse {
     position: relative;
-    top: 12px;
+    top: 22px;
     background: linear-gradient(267deg, #491e1e, #7c3504);
     z-index: 99;
     padding: 1rem 1.5rem;
@@ -250,6 +250,22 @@ header {
     margin: 0.25rem 0 2.7rem;
   }
 }
+.more-link {
+  margin: 2rem 0 0;
+}
+.more-link a {
+  border-radius: unset;
+  border: 1px solid var(--ori-brown);
+  color: var(--ori-brown);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1em 2.5em;
+  transition: 0.5s all ease-in-out;
+  text-decoration: none;
+  display: block;
+  width: max-content;
+}
 #preface {
   background: url(../images/preface-bg.png) no-repeat;
   background-size: cover;
@@ -408,8 +424,11 @@ header {
   background-color: var(--ori-brown);
   color: #ffffff;
 }
-#content-before h2 {
+#content-before h2,
+#content-before .field__label {
   margin: 0.5rem 0 1.5rem;
+  font-weight: 700;
+  font-size: 2.3rem;
 }
 #content-before p {
   font-size: 130%;
@@ -444,6 +463,14 @@ header {
 #content-before .contact-info p:nth-child(3),
 #content-before .contact-info p:nth-child(4) {
   font-weight: 600;
+}
+#content-before .more-link {
+  display: flex;
+  justify-content: center;
+}
+#content-before .more-link a:hover {
+  background-color: var(--ori-brown);
+  color: #ffffff;
 }
 #main-content .expertise-grid,
 #content-bottom .expertise-grid {
@@ -1092,31 +1119,31 @@ header {
     height: auto;
   }
 }
-body.front #preface {
+body.path-frontpage #preface {
   background: url(../images/logo-accent.png) no-repeat;
   background-position: -70% -3%;
   background-size: 80%;
 }
 @media (min-width: 768px) {
-  body.front #preface {
+  body.path-frontpage #preface {
     background-position: -10% -5%;
     background-size: initial;
   }
 }
-body.front #preface .btn-brown {
+body.path-frontpage #preface .btn-brown {
   background-color: var(--ori-brown);
   color: #ffffff;
 }
-body.front #preface .btn-brown:hover {
+body.path-frontpage #preface .btn-brown:hover {
   background-color: var(--ori-green);
   color: #000000;
   border-color: var(--ori-green);
 }
-body.front #preface::before,
-body.front #preface::after {
+body.path-frontpage #preface::before,
+body.path-frontpage #preface::after {
   content: none;
 }
-body.front #content-before {
+body.path-frontpage #content-before {
   background: none;
 }
 @media (min-width: 768px) {

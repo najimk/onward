@@ -29,6 +29,8 @@
         "drupal/pathauto": "^1.11",
         "drupal/token": "^1.11",
         "drupal/twig_attributes": "^2.0",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.2",
         "drush/drush": "^11.5"
     },
     "conflict": {
