@@ -112,13 +112,17 @@
 	{{ page.content_after }}
 {% endif %}
 
+{% if page.resources %}
+	{{ page.resources }}
+{% endif %}
+
 {% if page.news_updates %}
 	{{ page.news_updates }}
 {% endif %}
 
 
 <section id="footer">
-      <div class="container pt-5 pb-3">
+      <div class="container pt-5 pb-3 px-4 px-md-0">
         <div class="row">
 		{% if page.footer %}
 			{{ page.footer }}

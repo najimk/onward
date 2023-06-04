@@ -565,7 +565,7 @@ header {
     }
 
     li {
-      background: #ececec;
+      background: #dbdbdb;
       padding-bottom: 1.5rem;
       display: flex;
       flex-direction: column;
@@ -578,6 +578,7 @@ header {
         img {
           object-fit: cover;
           max-height: 230px;
+          width: 100%;
         }
       }
 
@@ -793,6 +794,10 @@ header {
         background-color: var(--ori-form-element);
         padding: 0.5em 1em;
       }
+      .form-actions {
+        text-align: center;
+        padding-top: 1rem;
+      }
       .webform-button--submit {
         border-radius: unset;
         color: #fff;
@@ -801,6 +806,31 @@ header {
         border: none;
         padding: 0.5em 1.2em;
         font-weight: 600;
+        width: 175px;
+      }
+    }
+  }
+  article {
+    .node-share {
+      padding: 0.85rem 0;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    p {
+      font-size: 115%;
+    }
+
+    .node-share,
+    .page {
+      @media (min-width: 768px) {
+        width: 78%;
+        margin: 0 auto 1rem;
+      }
+    }
+    .page {
+      @media (min-width: 768px) {
+        margin-top: 2.5rem;
       }
     }
   }
@@ -1056,6 +1086,7 @@ header {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          padding: 0 8px;
 
           h3 {
             font-weight: 600;

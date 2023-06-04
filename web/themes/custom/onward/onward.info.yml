@@ -15,6 +15,7 @@ regions:
   content: Content
   content_bottom: Content Bottom
   content_after: Content After
+  resources: Resources
   news_updates: news Updates
   footer: Footer
   copyright: Copyright

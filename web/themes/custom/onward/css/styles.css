@@ -495,7 +495,7 @@ header {
 }
 #main-content .expertise-grid li,
 #content-bottom .expertise-grid li {
-  background: #ececec;
+  background: #dbdbdb;
   padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -511,6 +511,7 @@ header {
   #content-bottom .expertise-grid li img {
     object-fit: cover;
     max-height: 230px;
+    width: 100%;
   }
 }
 #main-content .expertise-grid li div.card-body,
@@ -725,6 +726,11 @@ header {
   background-color: var(--ori-form-element);
   padding: 0.5em 1em;
 }
+#main-content .contact-form form .form-actions,
+#content-bottom .contact-form form .form-actions {
+  text-align: center;
+  padding-top: 1rem;
+}
 #main-content .contact-form form .webform-button--submit,
 #content-bottom .contact-form form .webform-button--submit {
   border-radius: unset;
@@ -734,6 +740,32 @@ header {
   border: none;
   padding: 0.5em 1.2em;
   font-weight: 600;
+  width: 175px;
+}
+#main-content article .node-share,
+#content-bottom article .node-share {
+  padding: 0.85rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+#main-content article p,
+#content-bottom article p {
+  font-size: 115%;
+}
+@media (min-width: 768px) {
+  #main-content article .node-share,
+  #content-bottom article .node-share,
+  #main-content article .page,
+  #content-bottom article .page {
+    width: 78%;
+    margin: 0 auto 1rem;
+  }
+}
+@media (min-width: 768px) {
+  #main-content article .page,
+  #content-bottom article .page {
+    margin-top: 2.5rem;
+  }
 }
 #mc_embed_signup_scroll {
   color: #ffffff;
@@ -974,6 +1006,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 8px;
 }
 #content-bottom .publications .pub-list li div.title h3 {
   font-weight: 600;
