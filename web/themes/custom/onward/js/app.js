@@ -1,0 +1,59 @@
+/**
+ *
+ * Code fo the social networking icons on the sidebar on article pages
+ *
+ */
+
+// Build the social share block
+function populateSocialLinks(socialSite, elementId = "sharebar") {
+  var i = document.createElement("i");
+  i.className = "fab fa-" + socialSite;
+
+  var a = document.createElement("a");
+  a.className = "social-icon";
+  a.href =
+    "javascript:socialOpen('" +
+    "https://" +
+    socialSite +
+    socialDict[socialSite] +
+    window.location.href +
+    "')";
+  a.append(i);
+
+  d = document.getElementById(elementId);
+  d.style.zIndex = "999";
+  d.append(a);
+}
+
+// raw share links https://crunchify.com/list-of-all-social-sharing-urls-for-handy-reference-social-media-sharing-buttons-without-javascript/
+// If you add a service you have to add the URL modifier to the dict
+var socialDict = {
+  facebook: ".com/sharer/sharer.php?u=",
+  twitter: ".com/share?url=",
+  pinterest: ".com/pin/create/bookmarklet/?url=",
+  linkedin: ".com/shareArticle?url=",
+  reddit: ".com/submit?url=",
+};
+
+//   Enabled share services
+socialLinks = ["facebook", "twitter", "linkedin", "pinterest", "reddit"];
+
+//   Run it
+socialLinks.forEach((item) => populateSocialLinks(item, "sharebar"));
+
+// popup small window for share (plagiarised from somehwere.... not sure where)
+function socialOpen(url) {
+  window.open(
+    url,
+    "links",
+    "toolbar=0,location=1,directories=0,status=0,menubar=0,scrollbars=auto,resizable=yes,dependent=yes,width=400,height=400"
+  );
+  window.blur();
+}
+var links; //to avoid "undefined" message
+// JavaScript Unleashed's onUnload event handler
+function clean() {
+  if (links != null) {
+    links.close();
+  }
+}

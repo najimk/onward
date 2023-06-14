@@ -97,12 +97,8 @@
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content.field_image|add_attr('image_attributes', {class: ['img-fluid']}) }}
-    <div class="node-share d-flex justify-content-end">
-          <span>Share</span>
-          <a href="#"><i class="bi bi-envelope-fill"></i></a>
-          <a href="#"><i class="bi bi-twitter"></i></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
+    <div class="node-share d-flex justify-content-end" id="sharebar">
+      <span>Share</span>
     </div>
     <div class="page case-study">
     {{ content.body }}

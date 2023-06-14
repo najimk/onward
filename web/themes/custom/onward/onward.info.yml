@@ -13,6 +13,7 @@ regions:
   preface: Preface
   content_before: Content Before
   content: Content
+  sidebar: Sidebar
   content_bottom: Content Bottom
   content_after: Content After
   more: More

@@ -901,7 +901,8 @@ header {
   }
 
   article {
-    .node-share {
+    .node-share,
+    .article-share {
       padding: 0.95rem 0;
       margin-bottom: 1rem;
       border-bottom: 1px solid #cccccc;
@@ -973,6 +974,53 @@ header {
       }
     }
 
+    figure {
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .caption-wrap {
+        padding: 0.2em;
+        position: relative;
+        left: 0px;
+        max-width: 90%;
+        margin-bottom: 0px;
+
+        @media (min-width: 992px) {
+          padding: 0.5em;
+          width: 60%;
+          left: 0px;
+        }
+
+        p {
+          margin: 0;
+          color: #5d5a5a;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 85%;
+        }
+      }
+    }
+
+    .article-share {
+      width: initial;
+    }
+
+    .node .field--type-image {
+      float: none !important;
+      margin: 0px !important;
+
+      img {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+
     .case-study {
       .field__label {
         font-weight: 600;
@@ -1018,6 +1066,74 @@ header {
       .page-link {
         border-radius: 0px;
         color: #333333;
+      }
+    }
+  }
+
+  .postdate {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 85%;
+    margin: 3px 0 10px;
+    color: var(--ori-green);
+  }
+
+  .sidenews {
+    background-color: var(--ori-gray);
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+
+    @media (min-width: 768px) {
+      padding: 1.35rem 1.75rem;
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 1.25rem;
+      font-size: 140%;
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+
+      li {
+        margin: 0px 0 1.5rem;
+        display: flex;
+
+        div.img {
+          width: 30%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            min-height: 75px;
+          }
+        }
+
+        div.body {
+          width: 70%;
+          padding: 0 0 0 0.75rem;
+
+          span {
+            color: var(--ori-green);
+            font-size: 85%;
+          }
+
+          h3 {
+            font-weight: 600;
+            font-size: 100%;
+            margin: 0px;
+
+            a {
+              color: #000000;
+              &:hover {
+                color: var(--ori-brown);
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -1083,7 +1199,8 @@ header {
       position: relative;
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
       }
 
       div {
@@ -1093,7 +1210,7 @@ header {
           rgba(255, 0, 0, 0),
           #111010
         );
-        top: 65%;
+        top: 55%;
         width: 100%;
         bottom: 0;
         color: #fff;
@@ -1173,6 +1290,14 @@ header {
 
         h3 {
           font-weight: 600;
+
+          a {
+            color: #000000;
+
+            &:hover {
+              color: var(--ori-brown);
+            }
+          }
         }
 
         p {
