@@ -30,7 +30,6 @@ a {
 ul,
 ol {
   margin: 0px;
-  padding: 0px;
 }
 
 h2 {
@@ -544,6 +543,96 @@ header {
       }
     }
   }
+
+  .nav-tabs {
+    border: 0;
+    gap: 0.5rem;
+
+    li {
+      button {
+        font-weight: 600;
+        color: #838282;
+      }
+      .nav-link {
+        border-radius: 5px;
+        border: 0px;
+        background: #e7e7e7;
+        font-size: 105%;
+
+        &:hover {
+          color: #333333;
+        }
+      }
+
+      .nav-link.active {
+        color: var(--ori-brown);
+        border: 0px;
+        background: #ffffff;
+      }
+    }
+
+    @media (min-width: 992px) {
+      display: initial;
+
+      li {
+        margin-bottom: 1rem;
+
+        button {
+          width: 100%;
+          text-align: left;
+          padding: 1.25rem 2rem;
+        }
+
+        .nav-link {
+          font-size: 120%;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 1.25rem;
+    margin: 0.5rem 0;
+
+    .field__label {
+      font-size: 1.65rem;
+      font-weight: 600;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      font-size: 120% !important;
+    }
+
+    ul {
+      list-style-type: square;
+      font-size: 120%;
+
+      li {
+        line-height: 1.75rem;
+      }
+    }
+  }
+
+  .tab-wrapper {
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 25% 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+
+      .tab-content {
+        margin: 0;
+        padding: 3.2rem 3.75rem;
+      }
+    }
+  }
 }
 
 #main-content,
@@ -810,15 +899,65 @@ header {
       }
     }
   }
+
   article {
     .node-share {
-      padding: 0.85rem 0;
+      padding: 0.95rem 0;
       margin-bottom: 1rem;
       border-bottom: 1px solid #cccccc;
+      gap: 10px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #999999;
+      }
+
+      a {
+        border: 1px solid #999999;
+        height: 36px;
+        width: 36px;
+        font-size: 110%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+
+        i {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        &:hover {
+          background-color: var(--ori-green);
+
+          i {
+            color: #ffffff;
+          }
+        }
+      }
     }
 
     p {
-      font-size: 115%;
+      font-size: 120%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    ul {
+      list-style-type: square;
+      font-size: 120%;
+
+      li {
+        line-height: 1.75rem;
+      }
     }
 
     .node-share,
@@ -831,6 +970,54 @@ header {
     .page {
       @media (min-width: 768px) {
         margin-top: 2.5rem;
+      }
+    }
+
+    .case-study {
+      .field__label {
+        font-weight: 600;
+        padding: 5px 0 15px;
+        font-size: 1.35rem;
+      }
+
+      .field--name-body {
+        .field__label {
+          font-size: 1.85rem;
+          font-weight: 900;
+        }
+      }
+
+      .field__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .field__item {
+          background: #e5ffa0;
+          padding: 5px 10px;
+          font-size: 85%;
+          font-weight: 600;
+
+          a {
+            color: #5d5a5a;
+
+            &:hover {
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    justify-content: center;
+    margin: 2rem 0 0;
+
+    li {
+      .page-link {
+        border-radius: 0px;
+        color: #333333;
       }
     }
   }
@@ -927,6 +1114,11 @@ header {
 #news-updates,
 #main-content {
   padding: 0;
+
+  .view-header {
+    padding-bottom: 1.5rem;
+    margin: 1.5rem 0px;
+  }
 
   .case-nav {
     .nav-item {
@@ -1303,11 +1495,6 @@ body.path-frontpage {
   }
 
   p {
-    color: #939191;
-  }
-
-  p:nth-child(3),
-  p:nth-child(4) {
     color: #e0e0e0;
     margin: 0 0 7px;
 
@@ -1315,6 +1502,11 @@ body.path-frontpage {
       color: var(--ori-green);
       padding-right: 6px;
     }
+  }
+
+  div:nth-child(2) > p:nth-child(1),
+  p:nth-child(2) {
+    color: #939191;
   }
 
   ul {

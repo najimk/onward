@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f86804773ab13128bfb56967888e6f54e4a97a67',
+        'reference' => '55ba517ace9c366a2dcf1d1dd4d099f0ed3994ad',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -370,6 +370,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/draggableviews' => array(
+            'pretty_version' => '2.1.3',
+            'version' => '2.1.3.0',
+            'reference' => '2.1.3',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/draggableviews',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/ds' => array(
             'pretty_version' => '3.15.0',
             'version' => '3.15.0.0',
@@ -436,7 +445,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f86804773ab13128bfb56967888e6f54e4a97a67',
+            'reference' => '55ba517ace9c366a2dcf1d1dd4d099f0ed3994ad',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
