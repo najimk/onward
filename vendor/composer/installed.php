@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '55ba517ace9c366a2dcf1d1dd4d099f0ed3994ad',
+        'reference' => 'dd655513ab7647fb306721fef648b532e32b650d',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -388,6 +388,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/easy_breadcrumb' => array(
+            'pretty_version' => '2.0.5',
+            'version' => '2.0.5.0',
+            'reference' => '2.0.5',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/easy_breadcrumb',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/entity_reference_revisions' => array(
             'pretty_version' => '1.10.0',
             'version' => '1.10.0.0',
@@ -445,7 +454,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '55ba517ace9c366a2dcf1d1dd4d099f0ed3994ad',
+            'reference' => 'dd655513ab7647fb306721fef648b532e32b650d',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

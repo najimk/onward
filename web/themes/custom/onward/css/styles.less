@@ -71,7 +71,7 @@ header {
   @media (min-width: 768px) {
     .logo {
       img {
-        width: 125px;
+        width: 135px;
         height: auto;
       }
     }
@@ -143,6 +143,7 @@ header {
 
           // menu on wide screnes
           @media (min-width: 1200px) {
+            margin: 0px 5px;
             font-size: 115%;
           }
 
@@ -156,16 +157,34 @@ header {
 
             @media (min-width: 992px) {
               background: var(--ori-brown);
+              padding: 2rem;
+              columns: 2;
+              margin-top: 21px;
 
               li {
                 margin: 0px;
-                padding: 0px;
+                padding: 5px 0px;
+                font-size: 90%;
+                line-height: 24px;
+                font-weight: normal;
+
                 a {
                   color: #ffffff;
                 }
 
                 a:hover {
                   background-color: var(--ori-brown);
+                  color: var(--ori-green);
+                }
+                &:hover {
+                  background: none;
+                }
+              }
+
+              li.active {
+                background: none;
+
+                a {
                   color: var(--ori-green);
                 }
               }
@@ -723,7 +742,7 @@ header {
     }
 
     @media (min-width: 992px) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     li {
@@ -1509,7 +1528,9 @@ header {
       padding: 0px 1.5rem;
     }
   }
+}
 
+#news-updates {
   .leadership {
     .grid {
       display: grid;
@@ -1563,6 +1584,52 @@ header {
             width: 100%;
             height: auto;
           }
+        }
+      }
+    }
+  }
+}
+
+#block-countries {
+  color: #ffffff;
+  padding: 0 0.5rem;
+  .content {
+    .field--name-field-image {
+      background-color: #ececec;
+      padding: 1rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .content {
+      .field--name-body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .field--name-field-image {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .content {
+      .field--name-body {
+        p {
+          padding-right: 6rem;
+          font-size: 115%;
+        }
+      }
+      .field--name-field-image {
+        overflow: visible;
+        img {
+          width: 75%;
         }
       }
     }
