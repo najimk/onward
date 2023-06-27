@@ -16,6 +16,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  //font-family: "Open Sans", sans-serif;
   border: 0px;
   padding: 0px;
 }
@@ -30,6 +31,15 @@ a {
 ul,
 ol {
   margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
 }
 
 h2 {
@@ -78,6 +88,7 @@ header {
   }
 
   .navbar {
+    padding-bottom: 0px;
     .navbar-toggler {
       border: 0px;
       margin: 0px 8px 0 0;
@@ -131,6 +142,7 @@ header {
           @media (min-width: 768px) {
             a {
               color: #000000;
+              padding-bottom: 30px;
               &:hover {
                 color: var(--ori-brown);
               }
@@ -159,7 +171,7 @@ header {
               background: var(--ori-brown);
               padding: 2rem;
               columns: 2;
-              margin-top: 21px;
+              margin-top: 0px;
 
               li {
                 margin: 0px;
@@ -377,6 +389,7 @@ header {
       padding: 10px 0 25px;
       margin-bottom: 20px;
       border-bottom: 1px solid #9d9d9d;
+      font-size: 2.25rem;
 
       @media (min-width: 768px) {
         width: 50%;
@@ -431,7 +444,7 @@ header {
     }
 
     li {
-      background: #ececec;
+      background: #d7d7d7;
       padding-bottom: 1.5rem;
 
       @media (min-width: 576px) {
@@ -473,6 +486,7 @@ header {
 
         h3 {
           font-weight: 700;
+          font-size: 1.25rem;
         }
 
         a {
@@ -696,6 +710,7 @@ header {
         justify-content: space-around;
         h4 {
           font-weight: 700;
+          font-size: 1.25rem;
         }
 
         p {
@@ -768,6 +783,7 @@ header {
 
         h4 {
           font-weight: 700;
+          font-size: 1.25rem;
         }
 
         p {
@@ -796,6 +812,12 @@ header {
           }
         }
       }
+    }
+  }
+
+  .cases {
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
@@ -834,6 +856,7 @@ header {
         justify-content: space-around;
         h4 {
           font-weight: 700;
+          font-size: 1.25rem;
         }
 
         p {
@@ -1185,7 +1208,7 @@ header {
   background: var(--ori-brown);
   padding: 3rem 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     background: linear-gradient(90deg, var(--ori-brown) 50%, #ececec 10%);
   }
 
@@ -1211,6 +1234,9 @@ header {
 
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
       margin: 0;
     }
 
@@ -1237,6 +1263,7 @@ header {
 
         h3 {
           font-weight: 600;
+          font-size: 1.25rem;
         }
 
         a {
@@ -1309,7 +1336,7 @@ header {
 
         h3 {
           font-weight: 600;
-
+          font-size: 1.25rem;
           a {
             color: #000000;
 
@@ -1666,6 +1693,81 @@ body.path-frontpage {
 
   #content-before {
     background: none;
+  }
+}
+
+#block-webform-2 {
+  color: #ffffff;
+  padding: 0 1rem;
+
+  h3 {
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 2rem;
+  }
+
+  form {
+    .webform-elements {
+      gap: 1rem;
+    }
+
+    .form-control {
+      border-radius: unset;
+      width: 100%;
+      border: none;
+      background-color: #ffffff;
+      color: #4c4c4c;
+      padding: 0.5em 1em;
+      outline: none;
+    }
+
+    .form-control:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .form-actions {
+      text-align: center;
+      padding-top: 1rem;
+    }
+    .webform-button--submit {
+      border-radius: unset;
+      color: #fff;
+      background: var(--ori-green);
+      box-shadow: none;
+      border: none;
+      padding: 0.5em 1.2em;
+      font-weight: 600;
+      width: 175px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    display: flex;
+
+    h3 {
+      flex: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .content {
+      flex: 50%;
+      padding-left: 1.5rem;
+    }
+
+    form {
+      #edit-layout-inquire {
+        margin-bottom: 0px !important;
+      }
+
+      .form-actions {
+        padding-top: 0;
+        margin-bottom: 0 !important;
+      }
+    }
   }
 }
 
