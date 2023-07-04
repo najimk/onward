@@ -13,7 +13,7 @@
   outline: none;
 }
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Open Sans", sans-serif;
   border: 0px;
   padding: 0px;
 }
@@ -135,7 +135,8 @@ header {
 @media (min-width: 1200px) {
   #branding .navbar .navbar-collapse .navbar-nav li {
     margin: 0px 5px;
-    font-size: 115%;
+    font-size: 105%;
+    font-weight: 700;
   }
 }
 #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
@@ -196,7 +197,7 @@ header {
 }
 #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption {
   top: 20%;
-  left: 5%;
+  left: 7%;
 }
 #slider #carouselExampleSlidesOnly .carousel-inner div.carousel-item .carousel-caption .slide-text {
   border-top: 2px solid #f3f3f3;
@@ -460,7 +461,7 @@ header {
   font-size: 2.3rem;
 }
 #content-before p {
-  font-size: 130%;
+  font-size: 120%;
 }
 #content-before p em {
   font-weight: 600;
@@ -626,7 +627,7 @@ header {
 #main-content .expertise-grid li div.card-body h4,
 #content-bottom .expertise-grid li div.card-body h4 {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 #main-content .expertise-grid li div.card-body p,
 #content-bottom .expertise-grid li div.card-body p {
@@ -909,7 +910,7 @@ header {
 }
 #main-content article p,
 #content-bottom article p {
-  font-size: 120%;
+  font-size: 110%;
 }
 #main-content article img,
 #content-bottom article img {
@@ -1131,6 +1132,20 @@ header {
 @media (min-width: 992px) {
   #content-after {
     background: linear-gradient(90deg, var(--ori-brown) 50%, #ececec 10%);
+    position: relative;
+  }
+  #content-after::before {
+    content: "";
+    width: 100px;
+    background-color: var(--ori-green);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    clip-path: polygon(60% 50%, 0% 0%, 0% 100%);
+  }
+  #content-after .practise {
+    z-index: 1;
   }
 }
 #content-after p {
@@ -1370,7 +1385,7 @@ header {
 }
 @media (min-width: 768px) {
   #content-bottom .publications .pub-list li div.title h3 {
-    font-size: 130%;
+    font-size: 120%;
     margin-bottom: 1.5rem;
   }
 }
@@ -1649,6 +1664,7 @@ body.path-frontpage #content-before {
 #footer p {
   color: #e0e0e0;
   margin: 0 0 7px;
+  font-size: 90%;
 }
 #footer p i {
   color: var(--ori-green);
@@ -1662,9 +1678,11 @@ body.path-frontpage #content-before {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  font-size: 95%;
 }
 #footer ul li a {
   color: #939191;
+  padding: 2px 0;
 }
 #copyright {
   background-color: var(--ori-dark-gray);
@@ -1673,7 +1691,7 @@ body.path-frontpage #content-before {
 #copyright p {
   margin: 0px;
   padding: 0px;
-  font-size: 93%;
+  font-size: 85%;
 }
 #copyright a {
   color: var(--ori-green);

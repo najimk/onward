@@ -15,8 +15,8 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  //font-family: "Open Sans", sans-serif;
+  //font-family: "Source Sans Pro", sans-serif;
+  font-family: "Open Sans", sans-serif;
   border: 0px;
   padding: 0px;
 }
@@ -156,7 +156,8 @@ header {
           // menu on wide screnes
           @media (min-width: 1200px) {
             margin: 0px 5px;
-            font-size: 115%;
+            font-size: 105%;
+            font-weight: 700;
           }
 
           .dropdown-menu {
@@ -235,7 +236,7 @@ header {
 
         .carousel-caption {
           top: 20%;
-          left: 5%;
+          left: 7%;
 
           .slide-text {
             border-top: 2px solid #f3f3f3;
@@ -525,7 +526,7 @@ header {
     font-size: 2.3rem;
   }
   p {
-    font-size: 130%;
+    font-size: 120%;
 
     em {
       font-weight: 600;
@@ -710,7 +711,7 @@ header {
         justify-content: space-around;
         h4 {
           font-weight: 700;
-          font-size: 1.25rem;
+          font-size: 1.2rem;
         }
 
         p {
@@ -986,7 +987,7 @@ header {
     }
 
     p {
-      font-size: 120%;
+      font-size: 110%;
     }
 
     img {
@@ -1210,6 +1211,22 @@ header {
 
   @media (min-width: 992px) {
     background: linear-gradient(90deg, var(--ori-brown) 50%, #ececec 10%);
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100px;
+      background-color: var(--ori-green);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 0;
+      clip-path: polygon(60% 50%, 0% 0%, 0% 100%);
+    }
+
+    .practise {
+      z-index: 1;
+    }
   }
 
   p {
@@ -1456,7 +1473,7 @@ header {
             font-size: 115%;
 
             @media (min-width: 768px) {
-              font-size: 130%;
+              font-size: 120%;
               margin-bottom: 1.5rem;
             }
           }
@@ -1791,6 +1808,7 @@ body.path-frontpage {
   p {
     color: #e0e0e0;
     margin: 0 0 7px;
+    font-size: 90%;
 
     i {
       color: var(--ori-green);
@@ -1807,10 +1825,12 @@ body.path-frontpage {
     list-style: none;
     margin: 0px;
     padding: 0px;
+    font-size: 95%;
 
     li {
       a {
         color: #939191;
+        padding: 2px 0;
       }
     }
   }
@@ -1823,7 +1843,7 @@ body.path-frontpage {
   p {
     margin: 0px;
     padding: 0px;
-    font-size: 93%;
+    font-size: 85%;
   }
 
   a {
