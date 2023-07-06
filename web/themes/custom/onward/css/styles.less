@@ -110,7 +110,7 @@ header {
     }
 
     .navbar-collapse {
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         position: relative;
         top: 22px;
         background: linear-gradient(267deg, #491e1e, #7c3504);
@@ -125,7 +125,7 @@ header {
         li {
           font-weight: 600;
           //menu on mobile devices
-          @media (max-width: 768px) {
+          @media (max-width: 992px) {
             font-size: 105%;
             a {
               color: #ffffff;
@@ -138,8 +138,8 @@ header {
               color: var(--ori-green);
             }
           }
-          // mene on tablets and above
-          @media (min-width: 768px) {
+          // menu on tablets and above
+          @media (min-width: 992px) {
             a {
               color: #000000;
               padding-bottom: 30px;
@@ -155,7 +155,7 @@ header {
 
           // menu on wide screnes
           @media (min-width: 1200px) {
-            margin: 0px 5px;
+            margin: 0px 3px;
             font-size: 105%;
             font-weight: 700;
           }
@@ -170,8 +170,8 @@ header {
 
             @media (min-width: 992px) {
               background: var(--ori-brown);
-              padding: 2rem;
-              columns: 2;
+              padding: 2.5rem 0.8rem 2.5rem 3rem;
+              columns: 3;
               margin-top: 0px;
 
               li {
@@ -200,6 +200,18 @@ header {
                 a {
                   color: var(--ori-green);
                 }
+              }
+
+              &::before {
+                content: "";
+                width: 50px;
+                background-color: var(--ori-green);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 0;
+                left: -1px;
+                clip-path: polygon(60% 50%, 0% 0%, 0% 100%);
               }
             }
           }
@@ -335,7 +347,7 @@ header {
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 1em 2.5em;
+    padding: 0.75em 2em;
     transition: 0.5s all ease-in-out;
     text-decoration: none;
     display: block;
@@ -1182,6 +1194,74 @@ header {
   }
 }
 
+#our-clients {
+  h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin: auto 4rem 1.5rem;
+    }
+
+    @media (min-width: 992px) {
+      margin: auto 8rem 1.5rem;
+    }
+  }
+
+  ul {
+    margin: 5px;
+    padding: 10px 0 0 0px;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    li {
+      border: 1px solid #eeeeee;
+      padding: 0.25rem;
+      background-color: #ffffff;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .more-link {
+    display: flex;
+    justify-content: center;
+    a {
+      &:hover {
+        background-color: var(--ori-brown);
+        color: #ffffff;
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: 65%;
+    color: #333333;
+    text-align: center;
+    padding: 2rem 0 0 0;
+  }
+}
+
 #mc_embed_signup_scroll {
   color: #ffffff;
   .indicates-required,
@@ -1641,9 +1721,16 @@ header {
     .field--name-field-image {
       background-color: #ececec;
       padding: 1rem;
+
+      @media (min-width: 992px) {
+        padding: 0 1rem;
+      }
+
       img {
         width: 100%;
         height: auto;
+        margin: 0px;
+        padding: 0px;
       }
     }
   }

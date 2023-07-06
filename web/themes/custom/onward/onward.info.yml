@@ -20,6 +20,7 @@ regions:
   resources: Resources
   news_updates: news Updates
   map: Map
+  clientele: Clientele
   footer: Footer
   copyright: Copyright
 

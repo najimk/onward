@@ -90,7 +90,7 @@ header {
     padding: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #branding .navbar .navbar-collapse {
     position: relative;
     top: 22px;
@@ -106,7 +106,7 @@ header {
 #branding .navbar .navbar-collapse .navbar-nav li {
   font-weight: 600;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #branding .navbar .navbar-collapse .navbar-nav li {
     font-size: 105%;
   }
@@ -120,7 +120,7 @@ header {
     color: var(--ori-green);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #branding .navbar .navbar-collapse .navbar-nav li a {
     color: #000000;
     padding-bottom: 30px;
@@ -134,7 +134,7 @@ header {
 }
 @media (min-width: 1200px) {
   #branding .navbar .navbar-collapse .navbar-nav li {
-    margin: 0px 5px;
+    margin: 0px 3px;
     font-size: 105%;
     font-weight: 700;
   }
@@ -148,8 +148,8 @@ header {
 @media (min-width: 992px) {
   #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
     background: var(--ori-brown);
-    padding: 2rem;
-    columns: 2;
+    padding: 2.5rem 0.8rem 2.5rem 3rem;
+    columns: 3;
     margin-top: 0px;
   }
   #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li {
@@ -174,6 +174,17 @@ header {
   }
   #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu li.active a {
     color: var(--ori-green);
+  }
+  #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu::before {
+    content: "";
+    width: 50px;
+    background-color: var(--ori-green);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    left: -1px;
+    clip-path: polygon(60% 50%, 0% 0%, 0% 100%);
   }
 }
 #branding .social {
@@ -288,7 +299,7 @@ header {
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 1em 2.5em;
+  padding: 0.75em 2em;
   transition: 0.5s all ease-in-out;
   text-decoration: none;
   display: block;
@@ -1104,6 +1115,69 @@ header {
 #content-bottom .sidenews ul li div.body h3 a:hover {
   color: var(--ori-brown);
 }
+#our-clients h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#our-clients p {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #our-clients p {
+    margin: auto 4rem 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #our-clients p {
+    margin: auto 8rem 1.5rem;
+  }
+}
+#our-clients ul {
+  margin: 5px;
+  padding: 10px 0 0 0px;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 576px) {
+  #our-clients ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  #our-clients ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  #our-clients ul {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+#our-clients ul li {
+  border: 1px solid #eeeeee;
+  padding: 0.25rem;
+  background-color: #ffffff;
+}
+#our-clients ul li img {
+  width: 100%;
+  height: auto;
+}
+#our-clients .more-link {
+  display: flex;
+  justify-content: center;
+}
+#our-clients .more-link a:hover {
+  background-color: var(--ori-brown);
+  color: #ffffff;
+}
+#our-clients .disclaimer {
+  font-size: 65%;
+  color: #333333;
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
 #mc_embed_signup_scroll {
   color: #ffffff;
 }
@@ -1531,9 +1605,16 @@ header {
   background-color: #ececec;
   padding: 1rem;
 }
+@media (min-width: 992px) {
+  #block-countries .content .field--name-field-image {
+    padding: 0 1rem;
+  }
+}
 #block-countries .content .field--name-field-image img {
   width: 100%;
   height: auto;
+  margin: 0px;
+  padding: 0px;
 }
 @media (min-width: 768px) {
   #block-countries .content .field--name-body {

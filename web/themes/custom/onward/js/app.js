@@ -3,6 +3,7 @@
  * Global utilities.
  *
  */
+
 (function($, Drupal) {
     "use strict";
 
@@ -16,7 +17,7 @@
     const showClass = "show";
 
     $(window).on("load resize", function() {
-        if (this.matchMedia("(min-width: 768px)").matches) {
+        if (this.matchMedia("(min-width: 992px)").matches) {
             $dropdown.hover(
                 function() {
                     const $this = $(this);
