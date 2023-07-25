@@ -139,6 +139,9 @@ header {
     font-weight: 700;
   }
 }
+#branding .navbar .navbar-collapse .navbar-nav li a.is-active {
+  color: var(--ori-brown);
+}
 #branding .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
   border-radius: 0px;
 }
@@ -1114,6 +1117,11 @@ header {
 #main-content .sidenews ul li div.body h3 a:hover,
 #content-bottom .sidenews ul li div.body h3 a:hover {
   color: var(--ori-brown);
+}
+.webform-confirmation__message {
+  font-size: 105%;
+  color: var(--ori-brown);
+  font-weight: 600;
 }
 #our-clients h2 {
   margin-bottom: 1rem;
